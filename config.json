@@ -1,0 +1,12 @@
+{
+	"host": "192.168.153.93",
+	"user": "user",
+	"password": "user",
+	"projectPath":"user/gift",
+	"build":{
+		 "jsPlace": "insertBody"
+	},
+	"output":{
+		 "jsPlace": "insertBody"
+	}
+}
