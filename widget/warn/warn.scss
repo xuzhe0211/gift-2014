@@ -1,0 +1,525 @@
+.gifts{
+	position:relative;
+	width:320px;
+	height:360px;
+	float:left;
+	background:#fff;
+	z-index:1;
+	#remindTime{
+		border:1px solid #ccc;
+		height:21px;
+		line-height:21px;
+		padding:1px 26px 1px 2px;
+		background:url(i/calendar.png) right 2px no-repeat;
+	}
+	.ui-scrollbar-item{ 
+		background:#333;
+		opacity:0.3;
+		width:7px;
+		border-radius:5px;
+		-moz-transition:opacity,width 0.3s ease-out;
+		-webkit-transition:opacity,width 0.3s ease-out; 
+		-o-transition: opacity,width 0.3s ease-out;transition: opacity,width 0.3s ease-out;
+		cursor:default;
+		&:hover{
+			 opacity:0.8;
+			 width:7px;
+			 -moz-transition:opacity,width 0.3s ease-out;
+			 -webkit-transition:opacity,width 0.3s ease-out;
+			 -o-transition: opacity,width 0.3s ease-out;
+			 transition: opacity,width 0.3s ease-out;
+		}
+	}
+	#gifts-remind{
+		width:320px;
+		.mt{
+			height:28px;
+			padding:12px 0 0;
+			margin:0 16px 0;
+			h2{
+				position:relative;
+				float:left;
+				height:28px;
+				font:18px/18px "Microsoft YaHei";
+				color:#e4393c;
+				*line-height:22px;
+				b{
+					display: inline-block;
+					width:28px;
+					height:28px;
+					margin-right:10px;
+					vertical-align: middle;
+					background:url(i/2013092704.png) no-repeat;
+				}
+			}
+		}
+		.mc{
+			.reminder-list{
+				width:290px;
+				margin:0 auto;
+				.list-con{
+					*position:relative;
+					overflow-x:hidden;
+					overflow-y:hidden;
+					width:280px;
+					height:135px;
+					padding:22px 0 0 10px;
+					_padding-top:12px;
+					background:url(i/2013092701.png) repeat-y 15px 0;
+					.list-item{
+						width:257px;
+						.item{
+							width:257px;
+							height:30px;
+							margin-bottom:10px;
+							cursor:pointer;
+							dt{
+								width:22px;
+								height:30px;
+								float:left;
+								b{
+									display:block;
+									overflow:hidden;
+									width:11px;
+									height:11px;
+									margin-top:11px;
+									background:url(i/2013092702.png) no-repeat;
+									font-size:0;
+								}
+							}
+							dd{
+								position:relative;
+								width:233px;
+								height:28px;
+								float:left;
+								border:1px solid #eee;
+								background:#f5f5f5;
+								.corner{
+									position:absolute;
+									display:block;
+								}
+								.corner{
+									b{
+										position:absolute;
+										left:0;
+										width:0;
+										height:0;
+									}
+									.b1{z-index:1;}
+									.b2{z-index:2;}
+								}
+								.corner-left{
+									left:-11px;
+									top:9px;
+									b{
+										border-width:5px;
+									}
+									.b1{
+										left:0;
+										border-style:dashed solid dashed dashed;
+										border-color:transparent #EEE transparent transparent;
+									}
+									.b2{
+										left:1px;
+										border-style:dashed solid dashed dashed;
+										border-color:transparent #f5f5f5 transparent transparent;
+									}
+								}
+							}
+						}
+						.already-set{
+							dt{
+								b{
+									background:url(i/2013092703.png) no-repeat;
+								}
+							}
+							dd{
+								border-color:#fae6e6;background:#fef4f4;
+								.corner-left{
+									.b1{
+										border-color:transparent #fae6e6 transparent transparent;
+									}
+									.b2{
+										border-color:transparent #fef4f4 transparent transparent;
+									}
+								}
+							}
+							.date,.festival{
+								color:#e4393c;
+							}
+							.set-remind{
+								display:none;
+							}
+						}
+					}
+					.date{
+						float:left;
+						width:62px;
+						height:30px;
+						line-height:30px;
+						padding-left:10px;
+					}
+					.festival{
+						float:left;
+						width:95px;
+						height:30px;
+						line-height:30px;
+						overflow:hidden;
+					}
+					.operate{
+						float:left;
+						width:66px;
+						height:30px;
+						line-height:30px;
+						overflow:hidden;
+						text-align:center;
+					}
+					.set-remind{
+						float:left;
+						width:60px;
+						height:18px;
+						border:1px solid #eee;
+						border-radius:10px;
+						margin-top:4px;
+						background:#fff;
+						line-height:18px;
+						text-decoration:none;
+						color:#6cc3a0;
+					}
+					.edit,.del{
+						color:#6cc3a0;
+						margin-right:5px;
+					}
+					.prompt{
+						position:relative;
+						height:30px;
+						padding-left:22px;
+						cursor:default;
+						.line{
+							position:relative;
+							z-index:1;
+							overflow:hidden;
+							height:1px;
+							margin-top:-15px;
+							background:#eaeaea;
+							font-size:0;
+						}
+						.text{
+							position:relative;
+							z-index:2;
+							overflow:hidden;
+							width:115px;
+							height:30px;
+							margin:0 auto;
+							background:#fff;
+							line-height:30px;
+							text-align:center;
+							color:#ccc;
+						}
+					}
+				}
+				a.btn-gift-search{
+					position:relative;
+					display:block;
+					width:200px;
+					height:36px;
+					padding-left:90px;
+					line-height:36px;
+					text-align:left;
+					text-shadow:0 1px 1px #999;
+					font-size:17px;
+					font-family:'\5fae\8f6f\96c5\9ed1';
+					color:#fff;
+					b{
+						position:absolute;
+						left:60px;
+						top:9px;
+						width:20px;
+						height:20px;
+						opacity:.9;
+						background:url(i/2013092705.png) no-repeat;
+						_background-image:none;
+						_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://misc.360buyimg.com/gift/skin/2013/i/2013092705.png',sizingMethod='noscale');
+						&:hover{
+							opacity:1
+						}
+					}
+				}
+				.ui-scroll,
+				.ui-scroll-body,
+				.ui-scroll-head,
+				.ui-scroll-nail{
+					background-image: url(i/vscrollbar.png);
+					background-position: 0 0;
+					width: 13px;
+					height: 15px;
+				}
+				.ui-scroll{width: 15px;background-position: 100% 0;}
+				.ui-scroll-head{background-position: 0 0;}
+				.ui-scroll-nail{background-position: 0 -15px;}
+				.ui-scroll-body{border: 1px solid #bcbcbc;background-position: -45px 0;}
+			}
+			.gifts-video{
+				width:268px;
+				height:88px;
+				padding:10px;
+				margin:10px auto 0;
+				background:#f2f2f2;
+				color:#ef5151;
+				line-height: 30px;
+				font-family: "Microsoft YaHei";
+				p{
+					padding-top:10px;
+				}
+				span{
+					display: inline-block;
+					font-size:16px;
+				}
+				img{
+					width: 160px;
+					float:right;
+				}
+			}
+			#set-remind-info{
+				padding:0 20px;
+				.highlight{
+					input[type="text"]{
+						border:1px solid #f00;
+					}
+				}
+				li{
+					clear:both;
+					margin-bottom:10px;
+					zoom:1;
+					position:relative;
+					&:after{
+						content:'\20';display:block;clear:both
+					}
+					.dt,.dd{
+						float:left;height:30px;line-height:30px;
+					}
+					.dt{
+						width:62px;
+						text-align:right;
+						font-family:simsun;
+					}
+					.dd{
+						width:218px;
+						input[type="radio"]{
+							margin:0px;
+							padding:0px;
+							vertical-align: middle;
+							margin:0 3px;
+						}
+						span{
+							float:left;
+							padding-right:5px;
+						}
+						
+					}	
+					.msg{
+						position:absolute;
+						right:-8px;
+						top:7px;
+						padding:0px;
+						display: inline-block;
+						*display: inline;
+						*zoom:1;
+						width:16px;
+						height:16px;
+						background:#f00;
+						vertical-align: middle;
+					}	
+					.error{
+						background:url("i/error.png");
+					}
+					.ok{
+						background:url("i/2013071208.png");
+					}			
+					.txt-input,.txt-input2{
+						height:18px;padding:5px 2px;border:1px solid #ccc;line-height:18px;color:#666;
+						&:focus{
+							border:1px solid #aaa;color:#333;
+						}
+					}
+					.txt-input{width:190px;}
+					.txt-input2{width:30px;margin:0 3px;}
+					 .txt-red{color:#e4393c;}
+					 dl{
+					 	float:left;position:relative;width:48px;padding-right:5px;
+					 	dt{width:43px;height:28px;padding-left:5px;border:1px solid #ccc;}
+					 	.text{
+					 		position:relative;line-height:28px;color:#666;
+					 		 b{
+					 		 	position:absolute;
+					 		 	right:5px;
+					 		 	top:11px;
+					 		 	*top:5px;
+					 		 	overflow:hidden;
+					 		 	width:11px;
+					 		 	height:7px;
+					 		 	background:url(i/20130820A.png) no-repeat -16px -75px;
+					 		 	opacity:.8;
+					 		 	filter:alpha(opacity=80);
+					 		 	font-size:0;
+					 		 }
+					 	}
+					 	dd{
+					 		display:none;position:absolute;z-index:2;width:48px;border:1px solid #aaa;margin-top:-1px;
+					 		a{
+					 			display:block;width:43px;height:30px;padding-left:5px;background:#f7f7f7;line-height:30px;
+					 			&:hover{
+					 				width:43px;background:#FFF;text-decoration:none;color:#333;
+					 			}
+					 		}
+					 	}
+					 }
+				}
+				.tip{
+					position:absolute;
+					left:82px;
+					width:190px;
+					height:30px;
+					padding:0 5px;
+					background:#ffebeb;
+					line-height:30px;
+					opacity:.9;
+					color:#e4393c;
+				}
+				.fore{
+					padding-left:62px;
+				}
+				.hover{
+					dt{display:block;border:1px solid #aaa;}
+					dd{display:block;}
+					.text{
+						color:#333;
+						b{
+							opacity:1
+						}
+					}
+				}
+				#t-lunisolar,#t-month,#t-day{z-index:1;}
+				#t-lunisolar{
+					width:58px;
+					dt{width:51px;}
+					dd{
+						width:56px;
+						a{width:51px;}
+					}
+				}
+				.years-remind{
+					input{vertical-align:middle;}
+					label{font-family:tahoma;}
+				}
+				.determine{float:left;width:69px;height:30px;margin-right:10px;line-height:30px;color:#fff;}
+				.cancel{float:left;width:67px;height:28px;line-height:28px;}
+			}
+		}
+	}
+	.remind-box{
+		position:absolute;
+		left:0;
+		top:0;
+		width:320px;
+		height:360px;
+		background:#000;
+		opacity:.3;
+		filter:alpha(opacity=30);
+	}
+	#remind-box-info{
+		position:absolute;
+		left:20px;
+		top:160px;
+		width:218px;
+		height:40px;
+		padding-left:62px;
+		background:#fff;
+		line-height:40px;
+		color:#999;
+		span{
+			color:#7abd54;
+		}
+		b{
+			position:absolute;
+			left:40px;
+			top:12px;
+			width:16px;
+			height:16px;
+			background:url(i/2013071208.png) no-repeat;
+		}
+	}
+}
+.h_calendar_select .dt,.h_calendar_select .dd{float:left;height:30px;line-height:30px}
+.h_calendar_select .dt{width:62px;text-align:right;font-family:simsun}
+.h_calendar_select .dd{width:160px;margin-left:20px}
+.h_calendar_select dl{float:left;position:relative;width:48px}
+.h_calendar_select dl dt{width:43px;height:28px;padding-left:5px;border:1px solid #ccc}
+.h_calendar_select dl .text{position:relative;line-height:28px;color:#666}
+.h_calendar_select dl .text b{position:absolute;right:5px;top:11px;*top:5px;overflow:hidden;width:11px;height:7px;background:url(i/20130820A.png) no-repeat -16px -75px;opacity:.8;filter:alpha(opacity=80);font-size:0}
+.h_calendar_select dl dd{display:none;position:absolute;z-index:2;width:48px;border:1px solid #aaa;margin-top:-1px}
+.h_calendar_select dl dd a{display:block;width:43px;height:30px;padding-left:5px;background:#f7f7f7;line-height:30px}
+.h_calendar a.ctrl-prev,.h_calendar a.ctrl-next{background-image:url(i/calendar.png);background-repeat:no-repeat;overflow:hidden;height:25px;width:25px;line-height:10000px;text-align:center}
+.h_calendar .prevYear{background-position:0 -50px}
+.h_calendar .prevMonth{background-position:0 -100px}
+.h_calendar .nextYear{background-position:0 -75px}
+.h_calendar .nextMonth{background-position:0 -125px}
+.h_calendar a.ctrl-prev:hover,.h_calendar a.ctrl-next:hover{background-color:#eee;text-decoration:none}
+.h_calendar .ctrl-prev{float:left}
+.h_calendar .ctrl-next{float:right}
+.h_calendar_select a.disabled{background-image:url(i/calendar_disabled.png);background-repeat:no-repeat;overflow:hidden;height:25px;width:25px;line-height:10000px;text-align:center}
+.h_calendar_select  .prevYear.gray{
+	background-position:-25px -50px;
+	cursor:not-allowed;
+}
+.h_calendar_select  .prevMonth.gray{
+	background-position:-25px -100px;
+	cursor:not-allowed;
+}
+.h_calendar_select  .nextYear.gray{
+	background-position:-25px -75px;
+	cursor:not-allowed;
+}
+.h_calendar_select  .nextMonth.gray{
+	background-position:-25px -125px;
+	cursor:not-allowed;
+}
+.h_calendar_box{
+	width:321px;
+	_width:320px;
+	height:333px;
+	border:1px solid #ddd;
+	margin:0 auto;
+	position:absolute;
+	background:#fff;
+	z-index:10000;
+	display:none;
+}
+.h_calendar_select{height:25px;padding:10px 15px 0 15px}
+.h_calendar_week{clear:both;height:30px;line-height:30px;padding-top:5px;zoom:1}
+.h_calendar_list{clear:both;overflow:hidden;width:320px;height:258px;zoom:1}
+.h_calendar_week ul,.h_calendar_list ul{display:inline-block}
+.h_calendar_week ul,.h_calendar_list ul{display:block;width:322px;zoom:1}
+.h_calendar_week ul{height:30px}
+.h_calendar_week ul li{float:left;width:46px;text-align:center;display:inline;font-size:14px;font-family:"Microsoft YaHei"}
+.h_calendar_week ul li.week{color:#ed6d23}
+.h_calendar_list ul li{width:45px;height:42px;border-right:1px solid #ddd;border-top:1px solid #ddd;float:left;display:inline;text-align:center;cursor:pointer;overflow:hidden}
+.h_calendar_list ul li.bb{border-bottom:1px solid #ddd}
+.h_calendar_list .disabled{cursor:not-allowed}
+.solar_date{font-size:12px;font-family:Arial;font-weight:600;line-height:23px;height:23px;color:#005ea7}
+.lunar_date{font-size:12px;color:#999}
+.last_month .solar_date,.next_month .solar_date,.disabled .solar_date,.last_month .lunar_date,.last_month .lunar_date,.disabled .lunar_date{color:#ccc}
+.today{background-color:#e4393c}
+.today .solar_date,.today .lunar_date{color:#fff}
+.date_hover{background-color:#eee}
+.h_calendar #c-year dt,.h_calendar #c-month dt,.h_calendar #c-year,.h_calendar #c-month{width:65px}
+.h_calendar #c-year dd,.h_calendar #c-year dd a,.h_calendar #c-month dd,.h_calendar #c-month dd a{width:70px;background:#fff}
+.h_calendar #c-year{width:72px;margin-right:10px}
+#c-year a,#c-month a{color:#208de9;cursor:pointer;text-decoration:none}
+#c-year a:hover,#c-month a:hover{color:#333}
+.fxst{padding:10px 10px 10px 52px}
+.fxst-t{margin-left:-42px;font-size:14px;margin-bottom:6px;color:#f60}
+.fxst .btns,#fxfill .btns{text-align:center}
+.fxst .btn{width:45px;height:25px;line-height:25px;float:left;border:1px solid #ddd;border-radius:2px;margin:auto 8px auto 10px;background:#eee;text-decoration:none}
+.icon-warn03{display:inline-block;*zoom:1;font-size:0;line-height:0;overflow:hidden;background:url(i/icon-msg.png);width:32px;height:32px;vertical-align:middle}
+.ftx-04{vertical-align: middle;}

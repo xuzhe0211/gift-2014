@@ -1,0 +1,391 @@
+@import "../../css/lib.scss";
+.mt-1 { margin-top: -1px }
+.mt-2 { margin-top: -2px }
+.mt-3 { margin-top: -3px }
+.mt5 { margin-top: 5px }
+.mt10 { margin-top: 10px }
+.mt15 { margin-top: 15px }
+.mt20 { margin-top: 20px }
+.mr5 { margin-right: 5px }
+.mr10 { margin-right: 10px; }
+.mr20{margin-right:20px;}
+.mb5 { margin-bottom: 5px }
+.mb10 { margin-bottom: 10px }
+.mb20 { margin-bottom: 20px }
+.ml5 { margin-left: 5px }
+.ml10 { margin-left: 10px }
+.ml20{margin-left:20px;}
+
+//== @subsection 内边距  ==//
+.pt5 { padding-top: 5px }
+.pt10 { padding-top: 10px }
+.pt20 { padding-top: 20px }
+.pr5 { padding-right: 5px }
+.pr10 { padding-right: 10px }
+.pr20 { padding-right: 20px }
+.pb5 { padding-bottom: 5px }
+.pb10 { padding-bottom: 10px }
+.pb20{padding-bottom:20px;}
+.pl5 { padding-left: 5px }
+.pl10 { padding-left: 10px }
+.pl20 { padding-left: 20px }
+
+//== @subsection 按钮  ==//
+.btn-1{
+	background-color: #f00;
+}
+.btn-gray{
+	border:1px solid #ddd;
+	border-radius:2px;
+	background:#f7f7f7;
+	text-align:center;
+	cursor:pointer;
+	color:#333;
+	background:-moz-linear-gradient(top,#f7f7f7,#f2f2f2);
+	background:-webkit-gradient(linear,0 0,0 100%,from(#f7f7f7),to(#f2f2f2));filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7",endColorstr="#f2f2f2");
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#f2f2f2")";
+	&:hover{
+		box-shadow:0 1px 1px rgba(0,1,1,0.08);
+		border-color:#ccc;
+		text-decoration:none;
+		cursor:pointer;
+		color:#333;
+		background:-moz-linear-gradient(top,#f9f9f9,#f6f6f6);
+		background:-webkit-gradient(linear,0 0,0 100%,from(#f9f9f9),to(#f6f6f6));filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#f6f6f6");
+		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9", endColorstr="#f6f6f6")";
+	}
+}
+.btn-red{
+	border-radius:2px;
+	text-align:center;
+	cursor:pointer;
+	color:#fff;
+	background:#ef5151;
+	background:-moz-linear-gradient(top,#e74649,#df3033);
+	background:-o-linear-gradient(top,#e74649,#df3033);
+	background:-webkit-gradient(linear,0 0,0 100%,from(#e74649),to(#df3033));filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#E74649",endColorstr="#DF3033");
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr="#e74649", endColorstr="#df3033")";
+	&:hover{
+		box-shadow:0 1px 1px rgba(0,1,1,0.08);text-decoration:none;cursor:pointer;color:#fff;background:-moz-linear-gradient(top,#f05356,#eb3c3f);background:-webkit-gradient(linear,0 0,0 100%,from(#f05356),to(#eb3c3f));filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#F05356",endColorstr="#EB3C3F");
+		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr="#f05356", endColorstr="#eb3c3f")";
+	}
+}
+//== @subsection 文字颜色  ==//
+
+//== @subsection step  ==//
+
+//== @subsection 分页  ==//
+.page{
+	text-align: right;
+	font-size:14px;
+	color:#333;
+	a,span{
+		display: inline-block;
+		*display: inline;
+		*zoom:1;
+		width:36px;
+		height:36px;
+		line-height: 36px;
+		color:#333;
+		background:#fff;
+		text-align: center;
+		border-radius: 2px;
+		text-decoration: none;
+		margin:0 2px;
+		cursor: pointer;
+	}
+	.prev,.next{
+		width:81px;
+	}
+	.curr{
+		background:none;
+		font-weight: bold;
+		color:#e4393c;
+	}
+	em{
+		vertical-align: middle;
+	}
+}
+//== @subsection 布局  ==//
+#container{
+	background: #eee;
+    box-shadow: 0 -5px 5px #ddd inset;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    .w{
+    	overflow: hidden;
+    }
+}
+.footer{
+	#service-2013{
+		border-top:none;
+	}
+}
+.goTop{
+	position:fixed;
+	bottom:20px;
+	left:50%;
+	width:50px;
+	height:50px;
+	margin-left:610px;
+	background:url("i/scrollTopIcon.png");
+	text-indent: -1000px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.backpanel-gift{
+    width:38px;
+    position: fixed;
+    bottom:20px;
+    left:50%;
+    margin-left:606px;
+    z-index:1000;
+    text-align: center;
+    _position:absolute;
+    _bottom:auto;
+    _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+    .backpanel-inner{
+        padding-bottom:10px;
+        .bp-item{
+            background:#ccc;
+            width:38px;
+            height:38px;
+            margin-top:5px;
+            a{
+                display: block;
+                 background-color: #aaa;
+                background-image: url("i/backpanel20140708.png");
+                background-repeat: no-repeat;
+                color: #fff;
+                display: block;
+                height: 33px;
+                line-height: 1000px;
+                overflow: hidden;
+                padding: 5px 0 0 7px;
+                text-align: left;
+                text-decoration: none;
+            }
+            a:hover{
+                background-image: none;
+                color:#fff;
+                line-height: 14px;
+            }
+            .survey{
+                background-position: 0 -497px;
+            }
+            .backtop{
+                background-position: 0 -552px;
+            }
+        }
+    }
+}
+// == @subsection 动画 ==//
+.am-animation-scale-up {	
+	@include prefixer(animation-name, am-scale-up, o webkit moz ms);
+}
+.am-animation-scale-enlarge {
+	@include prefixer(animation-name, am-scale-enlarge, o webkit moz ms);
+}
+.am-animation-slide-left {
+	@include prefixer(animation-name, am-slide-left, o webkit moz ms);
+}
+.am-animation-slide-right {
+	@include prefixer(animation-name, am-slide-right, o webkit moz ms);
+}
+.am-animation-slide-top {
+	@include prefixer(animation-name, am-slide-top, o webkit moz ms);
+}
+
+.am-animation-slide-bottom {	
+	@include prefixer(animation-name, am-slide-bottom, o webkit moz ms);
+}
+
+.shake-slow {
+	&:hover{
+		@include prefixer(animation-name, shake-slow, o webkit moz ms);
+		@include prefixer(animation-duration, 5s, o webkit moz ms);
+		@include prefixer(animation-iteration-count, infinite, o webkit moz ms);
+		@include prefixer(animation-timing-function, infinite, o webkit moz ms);
+		@include prefixer(animation-delay, 0s, o webkit moz ms);
+		@include prefixer(animation-play-state, running, o webkit moz ms);
+	}
+}
+
+@include keyframes(am-scale-up, webkit moz ms o){
+    0% {
+        opacity: 0;
+        @include transform(scale(0.2));
+    }
+    100% {
+        opacity: 1;   
+        @include transform(scale(1));
+    }
+}
+@include keyframes(am-scale-enlarge, webkit moz ms o){
+    0% {
+        opacity: 1;
+        @include transform(scale(1));
+    }
+	20% {
+        opacity: 1;
+        @include transform(scale(1.02));
+    }
+	40% {
+        opacity: 1;
+        @include transform(scale(1.04));
+    }
+	60% {
+        opacity: 1;
+        @include transform(scale(1.06));
+    }
+	80% {
+        opacity: 1;
+        @include transform(scale(1.08));
+    }
+    100% {
+        opacity: 1;   
+        @include transform(scale(1.1));
+    }
+}
+@include keyframes(am-slide-left, webkit moz ms o){
+    0% {
+        opacity: 0;
+        @include transform(translateX(-100%));
+    }
+    100% {
+        opacity: 1;   
+        @include transform(translateX(0));
+    }
+}
+@include keyframes(am-slide-right, webkit moz ms o){
+    0% {
+        opacity: 0;
+        @include transform(translateX(100%));
+    }
+    100% {
+        opacity: 1;   
+        @include transform(translateX(0));
+    }
+}
+@include keyframes(am-slide-top, webkit moz ms o){
+    0% {
+        opacity: 0;
+        @include transform(translateY(-100%));
+    }
+    100% {
+        opacity: 1;   
+        @include transform(translateY(0));
+    }
+}
+@include keyframes(am-slide-bottom, webkit moz ms o){
+    0% {
+        opacity: 0;
+        @include transform(translateY(100%));
+    }
+    100% {
+        opacity: 1;   
+        @include transform(translateY(0));
+    }
+}
+@include keyframes(shake-slow, webkit moz ms o){
+	0% { @include transform(translate(0px, 0px) rotate(0deg)); }
+	2% { @include transform(translate(-10px, 5px) rotate(-2.5deg)); }
+	4% { @include transform(translate(7px, 7px) rotate(-3.5deg)); }
+	6% { @include transform(translate(8px, -7px) rotate(-2.5deg)); }
+	8% { @include transform(translate(-8px, 3px) rotate(-0.5deg)); }
+	10% { @include transform(translate(3px, -10px) rotate(-1.5deg)); }
+	12% { @include transform(translate(-9px, -6px) rotate(2.5deg)); }
+	14% { @include transform(translate(-2px, -6px) rotate(-0.5deg)); }
+	16% { @include transform(translate(6px, -1px) rotate(0.5deg)); }
+	18% { @include transform(translate(5px, -1px) rotate(0.5deg)); }
+	20% { @include transform(translate(7px, -5px) rotate(-0.5deg)); }
+	22% { @include transform(translate(-8px, 5px) rotate(2.5deg)); }
+	24% { @include transform(translate(0px, 4px) rotate(2.5deg)); }
+	26% { @include transform(translate(-1px, 2px) rotate(-1.5deg)); }
+	28% { @include transform(translate(-1px, -1px) rotate(1.5deg)); }
+	30% { @include transform(translate(-5px, -5px) rotate(2.5deg)); }
+	32% { @include transform(translate(0px, 7px) rotate(-0.5deg)); }
+	34% { @include transform(translate(-9px, 3px) rotate(-0.5deg)); }
+	36% { @include transform(translate(3px, -5px) rotate(-2.5deg)); }
+	38% { @include transform(translate(5px, 2px) rotate(-0.5deg)); }
+	40% { @include transform(translate(6px, -3px) rotate(0.5deg)); }
+	42% { @include transform(translate(-4px, -6px) rotate(-0.5deg)); }
+	44% { @include transform(translate(9px, 2px) rotate(-3.5deg)); }
+	46% { @include transform(translate(6px, -4px) rotate(1.5deg)); }
+	48% { @include transform(translate(6px, 5px) rotate(2.5deg)); }
+	50% { @include transform(translate(-9px, -2px) rotate(-2.5deg)); }
+	52% { @include transform(translate(-7px, 9px) rotate(-0.5deg)); }
+	54% { @include transform(translate(-5px, -5px) rotate(-3.5deg)); }
+	56% { @include transform(translate(-6px, -10px) rotate(1.5deg)); }
+	58% { @include transform(translate(-3px, 1px) rotate(-3.5deg)); }
+	60% { @include transform(translate(3px, 5px) rotate(2.5deg)); }
+	62% { @include transform(translate(-1px, -8px) rotate(2.5deg)); }
+	64% { @include transform(translate(6px, -7px) rotate(-0.5deg)); }
+	66% { @include transform(translate(-7px, -1px) rotate(0.5deg)); }
+	68% { @include transform(translate(-3px, -4px) rotate(-1.5deg)); }
+	70% { @include transform(translate(-10px, 9px) rotate(2.5deg)); }
+	72% { @include transform(translate(9px, 9px) rotate(2.5deg)); }
+	74% { @include transform(translate(-6px, 8px) rotate(-0.5deg)); }
+	76% { @include transform(translate(-5px, -10px) rotate(-2.5deg)); }
+	78% { @include transform(translate(-7px, -9px) rotate(-0.5deg)); }
+	80% { @include transform(translate(8px, -4px) rotate(2.5deg)); }
+	82% { @include transform(translate(9px, 4px) rotate(-0.5deg)); }
+	84% { @include transform(translate(-1px, -1px) rotate(2.5deg)); }
+	86% { @include transform(translate(-6px, -3px) rotate(0.5deg)); }
+	88% { @include transform(translate(-2px, -4px) rotate(0.5deg)); }
+	90% { @include transform(translate(5px, 1px) rotate(0.5deg)); }
+	92% { @include transform(translate(1px, 2px) rotate(-3.5deg)); }
+	94% { @include transform(translate(-5px, -10px) rotate(1.5deg)); }
+	96% { @include transform(translate(-6px, 3px) rotate(-3.5deg)); }
+}
+[class*=am-animation-] {
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
+	/* -webkit-animation-fill-mode:both; */
+	animation-fill-mode: both
+}
+.am-animation-scale-enlarge {
+	-webkit-animation-duration: 12s;
+	animation-duration: 12s;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+	animation-fill-mode: both
+}
+.notice-search{
+	padding:10px 50px;
+	text-align: center;
+	.ns-icon{
+		display:inline-block;
+		*display: inline;
+		*zoom:1;
+		width: 32px;
+		height: 32px;
+		vertical-align: middle;
+		background: url(http://misc.360buyimg.com/product/search/0.0.2/css/i/search.notice.png?20141218184017) no-repeat 0 2px;
+	}
+	.ns-content{
+		display:inline-block;
+		*display: inline;
+		*zoom:1;
+		line-height: 32px;
+		padding-left: 10px;
+		font-size: 14px;
+		font-weight: 700;
+		color: #f60;
+		vertical-align: middle;
+		em{
+			color:#333;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

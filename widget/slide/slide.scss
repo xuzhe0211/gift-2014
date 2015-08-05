@@ -1,0 +1,124 @@
+#slide{
+	width:670px;
+	height:360px;
+	float:left;
+	position:relative;
+	overflow: hidden;
+	.slide-ctrl{
+		display: none;
+		position: absolute;
+		top: 50%;
+		width: 42px;
+		height: 52px;
+		z-index: 1;
+		margin-top:-41px;
+		text-align: center;
+		background:rgba(000,000,000,0.5)!important;
+		background:transparent\9;
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+		b{
+			display: inline-block;
+			*display: inline;
+			*zoom:1;
+			width:25px;
+			height:35px;
+			background:url("i/1.png");
+			vertical-align: middle;
+		}
+		s{
+			display: inline-block;
+			*display: inline;
+			*zoom:1;
+			height:100%;
+			vertical-align: middle;
+		};
+	}
+	.prev{
+		let:0px;
+		b{
+			background-position: -25px 0;
+		}
+	}
+	.next{
+		right:0px;
+		b{
+			background-position: -25px -35px;
+		}
+	}
+	ul{
+		position:absolute;
+		top:0;
+		width:670px;
+		height:360px;
+		li{
+			overflow:hidden;
+			width:670px;
+			height:360px;
+		}
+	}
+	.slide-controls{
+		position:absolute;
+		left:0;
+		bottom:0;
+		width:680px;
+		height:30px;
+		span{
+			float:left;
+			overflow:hidden;
+			width:133px;
+			height:30px;
+			border-right:1px solid #ccc;
+			border-radius:0;
+			margin:0;
+			background:rgba(102,102,102,0.8)!important;
+			background:transparent\9;
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66333333,endColorstr=#66333333);
+			line-height:30px
+			;text-align:center;
+			text-overflow:ellipsis;
+			white-space:nowrap;
+			cursor:pointer;
+			font-size:12px;
+			color:#fff;
+			&.curr{
+				width:136px;
+				height:30px;
+				padding-top:4px;
+				border:0;margin:-4px 0 0 -1px;
+				background:rgba(255,255,255,0.6)!important;
+				background:transparent\9;
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+				font-weight:bold;
+				color:#e4393c;
+				a:link,a:visited{
+					color:#e4393c;
+					font-weight:bold;
+				}
+			}
+			a:link,a:visited{
+				color:#ccc;
+				text-decoration:none;
+			}
+		}
+	}
+}
+.root61{
+	#slide{
+		width:890px;
+		ul{
+			width:890px;
+			li{
+				width:890px;
+			}
+		}
+		.slide-controls{
+			width:900px;
+			span{
+				width:223px;
+				&.curr{
+					width:226px;
+				}
+			}
+		}
+	}
+}

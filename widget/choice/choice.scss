@@ -1,0 +1,138 @@
+#choice{
+	position:relative;
+	width:990px;
+	height:482px;
+	padding-top:40px;
+	margin-bottom:20px;
+	background:#fff;
+	.mt{position:absolute;top:0;width:140px;height:40px;text-align:center}
+	.mt h2{height:40px;line-height:40px;text-align:center;font-weight:normal;font-size:15px;color:#333}
+	.curr .mt h2{background:#ef5151;color:#fff}
+	.mc{display:none;border-top:2px solid #ef5151}
+	.curr .mc{display:block;height:460px;padding-top:10px}
+	.fore1 a,.fore2 a{text-decoration:none}
+	.fore1 .mt{left:0}
+	.fore2 .mt{left:140px}
+	.fore3 .mt{left:280px}
+	.fore4 .mt{left:420px}
+	.fore5 .mt{left:560px}
+	.fore6 .mt{left:700px}
+	.l-item{float:left;position:relative;overflow:hidden;width:732px;padding-left:10px;margin-top:10px}
+	.l-item .item{float:left;*position:relative;overflow:hidden;width:112px;height:140px;margin:0 10px 10px 0;background: #fff url(http://misc.360buyimg.com/lib/skin/e/i/loading-jd.gif) no-repeat 50% 50%;}
+	.l-item .fore01{width:224px;height:260px;height:258px \0;padding:30px 0 0 10px}
+	.l-item .fore03,.l-item .fore06{margin-right:132px}
+	.l-item .fore10{width:234px}
+	.l-item .fore13{position:absolute;left:498px;top:0;height:290px}
+	.l-item .fore01 h4{margin-bottom:5px;cursor:default;font-family:"\5fae\8f6f\96c5\9ed1";font-size:42px;font-weight:500px;line-height:1em;color:#333}
+	.l-item .fore01 h5{margin-bottom:5px;cursor:default;font-family:"\5fae\8f6f\96c5\9ed1";font-size:30px;font-weight:500px;line-height:1em;color:#999}
+	.l-item .fore01 em{display:inline-block;height:24px;padding:1px 3px;margin-bottom:20px;background:#ef5151;cursor:default;font:21px/24px arial,'\5fae\8f6f\96c5\9ed1';color:#fff}
+	.l-item .fore01 p{line-height:22px;cursor:default;color:#999}
+	.l-item .item a{position:relative;display:block;text-decoration:none}
+	.l-item .item img{margin-left:-14px}
+	.l-item .fore10 img{margin-left:-28px}
+	.l-item .item a div{position:absolute;left:0;bottom:0;overflow:hidden;width:112px;height:25px;background:rgba(108,195,160,0.8)!important;background:transparent\9;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC6CC3A0,endColorstr=#CC6CC3A0);text-align:center;transition:all .5s ease-in 0s;line-height:25px;text-overflow:ellipsis;white-space:nowrap;cursor:pointer;color:#fff}
+	.l-item .item a:hover div{background:rgba(108,195,160,0.6)!important;background:transparent\9;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#996CC3A0,endColorstr=#996CC3A0)}
+	:root .l-item .item a:hover div{filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)}
+	.l-item .fore10 a div{width:234px}
+	.r-item{float:left;width:234px;height:440px;margin-top:10px}
+	.r-item .item{*position:relative;overflow:hidden;width:234px;height:290px;text-align:center}
+	.r-item .item img{width:290px;height:290px;margin-left:-28px}
+	.r-item .fore01{margin-bottom:10px}
+	.r-item .fore01 a{position:relative;display:block;text-decoration:none}
+	.r-item .fore01 a div{position:absolute;left:0;bottom:0;overflow:hidden;width:234px;height:45px;background:rgba(108,195,160,0.8)!important;background:transparent\9;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC6CC3A0,endColorstr=#CC6CC3A0);transition:all .4s ease-in 0s;line-height:45px;text-overflow:ellipsis;white-space:nowrap;cursor:pointer;color:#fff}
+	.r-item .fore01 a:hover div{background:rgba(108,195,160,0.6)!important;background:transparent\9;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#996CC3A0,endColorstr=#996CC3A0)}
+	:root .r-item .fore01 a:hover div{filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)}
+	.r-item .fore02{width:214px;height:120px;padding:10px}
+	.r-item .fore02 p{line-height:22px;text-align:left;cursor:default;color:#999}
+	.stab{clear:both;height:30px;padding-left:20px;margin-bottom:20px}
+	.stab li{float:left;height:30px;padding:0 24px;margin-right:5px;line-height:30px;background:#eee;cursor:default;color:#333}
+	.stab .curr{background:#ef5151;color:#fff}
+	.subtabcon{clear:both;padding-left:18px}
+	.subtabcon li{float:left;width:130px;height:196px;padding:10px 30px 0;border-right:1px solid #eee;border-bottom:1px solid #eee}
+	.subtabcon .p-img{position:relative;overflow:visible;height:130px;padding:3px 0;text-align:center;background: #fff url(http://misc.360buyimg.com/lib/skin/e/i/loading-jd.gif) no-repeat 50% 50%;}
+	.subtabcon .picon{position:absolute;left:-20px;top:0;width:42px;height:29px;padding-top:13px;background:url("i/2013071402.png") no-repeat;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://misc.360buyimg.com/product/skin/2013/i/2013071402.png',sizingMethod='noscale');text-align:center;font:bold 22px/30px arial;color:#6cc3a0}
+	.subtabcon .pin{background:url(i/2013071401.png) no-repeat;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://misc.360buyimg.com/product/skin/2013/i/2013071401.png',sizingMethod='noscale');color:#fff}
+	.subtabcon .p-name{overflow:hidden;height:3em;word-break:break-all;word-wrap:break-word;font-family:verdana}
+	.subtabcon .p-price{font-family:verdana;font-size:14px;color:#e4393c}
+	.subtabcon .fore05,.subtabcon .fore10{border-right:0}
+	.subtabcon .fore06,.subtabcon .fore7,.subtabcon .fore08,.subtabcon .fore9,.subtabcon .fore10{border-bottom:0}
+	#shops{position:relative;padding-left:10px;margin-top:10px;zoom:1}
+	#shops .item{position:relative;float:left;overflow:hidden;width:235px;height:440px;margin-right:10px}
+	#shops .fore03{height:215px}
+	#shops .fore05{position:absolute;left:500px;top:225px;height:215px}
+	#shops .fore05 a{width:235px;height:215px}
+	#shops .item a{position:relative;display:block;text-decoration:none}
+	#shops .item img{margin-left:-27px}
+	#shops .item a div{position:absolute;left:0;bottom:0;overflow:hidden;width:235px;height:45px;background:rgba(108,195,160,0.8)!important;background:transparent\9;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC6CC3A0,endColorstr=#CC6CC3A0);transition:all .2s ease-in 0s;cursor:pointer}
+	:root #shops .item a div{filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)}
+	#shops .item a h5{line-height:45px;text-align:center;text-overflow:ellipsis;white-space:nowrap;font-weight:bold;font-size:14px;color:#fff}
+	#shops .item a:hover div{background:rgba(108,195,160,0.8)!important;background:transparent\9;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#996CC3A0,endColorstr=#996CC3A0)}
+	:root #shops .item a:hover div{filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)}
+	#shops .item a p,#shops .item .go-shop{display:none}
+	#shops .item a p{display:block;overflow:hidden;height:100px;padding:0 33px;margin-bottom:20px;line-height:1.8;color:#fff}
+	#shops .item a em{display:none;position:relative;height:36px;margin:0 33px;background:#fff;text-align:center;font-size:17px;line-height:36px;font-family:"\5fae\8f6f\96c5\9ed1";color:#6cc3a0}
+	#shops .item a em b{position:absolute;right:25px;top:8px;width:22px;height:22px;background:url(i/20130820A.png) no-repeat -62px -65px}
+	#shops .hover a p,#shops .hover .go-shop,#shops .item a em{display:block}
+	#shops .hover a div{height:215px}
+	#gift-card{padding-left:10px}
+	#gift-card .item{float:left;width:195px;height:460px;padding:0 20px;margin-right:10px;background:#f9f9f9}
+	#gift-card .item h4{padding-top:17px;margin-bottom:15px;font-size:18px;line-height:20px;font-family:"\5fae\8f6f\96c5\9ed1";color:#333}
+	#gift-card .fore04 h4{margin-bottom:13px}
+	#gift-card .item h5{overflow:hidden;height:1em;margin-bottom:12px;font-size:12px;line-height:1em;font-family:"verdana";color:#333}
+	#gift-card .fore04 h5{height:18px;margin-bottom:8px}
+	#gift-card .item .red{margin-bottom:8px;font-size:16px;line-height:1em;font-family:"\5fae\8f6f\96c5\9ed1";color:#e4393c;*line-height:20px}
+	#gift-card .item .gift-card-info{margin-bottom:16px;color:#999;font-size:12px;line-height: 1.6;font-family: "verdana"}
+	#gift-card .fore04 .gift-card-info{margin-bottom:14px}
+	#gift-card .item .gift-card-info a{font-family:simsun;color:#e4393c}
+	#gift-card .item .ctabcon{display:none;overflow:hidden;width:195px;height:160px;margin:0 auto 20px;text-align:center}
+	#gift-card .fore02 .ctabcon,#gift-card .fore03 .ctabcon{width:195px;height:123px;padding-top:10px;margin-bottom:20px}
+	#gift-card .fore04 .ctabcon{display:block;height:215px}
+	#gift-card .fore04 .step{height:12px;margin-bottom:10px;line-height:1em;*line-height:14px}
+	#gift-card .item .curr{display:block}
+	#gift-card .item .ctab{overflow:hidden;padding-left:0}
+	#gift-card .fore03 .ctab{padding-left:0}
+	#gift-card .item .ctab li{float:left;overflow:hidden;width:60px;height:30px;line-height:30px;text-align:center;border-radius:5px;box-shadow:0 1px 1px rgba(0,1,1,0.09);margin:0 5px 5px 0;background:#fff;transition:all .1s ease-in 0s;font-family:verdana;cursor:pointer;color:#333}
+	#gift-card .fore03 .ctab li{width:43px}
+	#gift-card .item .ctab .curr{background:#ef5151;cursor:default;color:#fff}
+	#gift-card .item .phone,#gift-card .item .mailbox{line-height:22px}
+	#gift-card .item .phone span,#gift-card .item .mailbox span{font-family:verdana;font-size:14px;color:#e4393c}
+
+}
+.root61{
+	#choice{
+		width:1210px;
+		.l-item{width:900px}
+		.l-item .item{width:140px}
+		.l-item .fore10{width:290px}
+		.l-item .item img{margin-left:0}
+		.l-item .item a div{width:140px}
+		.l-item .fore10 img{margin-left:0}
+		.l-item .fore01{width:260px;padding:30px 0 0 30px;background: none;}
+		.l-item .fore10 a div{width:290px}
+		.l-item .fore13{left:610px}
+		.l-item .fore03,.l-item .fore06{margin-right:160px}
+		.r-item{width:290px}
+		.r-item .item{width:290px}
+		.r-item .item img{margin-left:0}
+		.r-item .fore01 a div{width:290px}
+		.r-item .fore02{width:270px}
+
+		.subtabcon li{width:173px}
+		.subtabcon{padding-left:20px}
+		#shops .item,#shops .item a div{width:290px}
+		#shops .item img{margin-left:0}
+		#shops .item a em b{right:50px}
+		#shops .fore05{left:610px}
+		#shops .fore05 a{width:290px;}
+		#gift-card .item{width:250px}
+		#gift-card .item .ctabcon{width:250px}
+		#gift-card .item .ctab{padding-left:30px}
+		#gift-card .fore03 .ctab li{width:50px}
+		#gift-card .fore03 .ctab{padding-left:18px}
+		.gift-select-layer-bg .w{width:1210px;margin-left:-605px}
+		.gift-select-layer .mc span{font-size:16px}
+		.gift-select-layer .options dt{width:130px}
+		.gift-select-layer .options dd,.gift-select-layer .options dd a{width:128px}
+		.stockStatus{clear: both;color: #666;font-size:12px;float:right;}
+	}
+}

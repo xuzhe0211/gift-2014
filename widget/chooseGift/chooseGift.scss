@@ -1,0 +1,493 @@
+@mixin inline-block {
+  display: inline-block;
+  *display: inline;*zoom:1;
+}
+.chooseGift{
+	background:#fff;
+	margin-bottom:20px;
+	.mt{
+		border-bottom:2px solid #ef5151;
+		b{
+			@include inline-block;
+			width:140px;
+			height:40px;
+			line-height: 40px;
+			font-size:14px;
+			font-weight: bold;
+			color:#fff;
+			background:#ef5151;
+			text-align: center;
+		}
+	}
+	.mc{
+		padding:0px 15px;
+		.loading{
+			height:85px;
+			line-height: 85px;
+			background:url("i/loading.gif") center center no-repeat;
+			margin: 100px 0;
+			text-align: center;
+		}
+		.tab{
+			margin-top:6px;
+			li{
+				background:#eee;
+			    color: #333;
+			    float: left;
+			    height: 30px;
+			    line-height: 30px;
+			    margin: 4px 5px 0 0;
+			    padding: 0 24px;
+			    cursor: pointer;
+				transition: all 0.1s ease-in 0s;
+			}
+			.cur{
+				background:#ef5151;
+				color:#fff;
+			}
+		}
+		.crumbs{
+			@include inline-block;
+			margin-top: 4px;
+			background:#f3f3f3;
+			padding:0 15px;
+			*padding:0px 0px;
+			/*border:1px solid #ddd;*/
+			color:#333;
+			a{
+				color:#333;
+				padding:0 4px;
+			}
+			a:hover{
+				color:#1665a7;
+				text-decoration: none;
+			}
+			em{
+				margin: 0 2px 0 0;
+			}
+		}
+		.classify{
+			margin-bottom:10px;
+			.plist{
+				width:102%;
+				.item{
+					width:222px;
+					height:221px;
+					float:left;
+					margin:15px 15px 0 0;
+					border:1px solid #ddd;
+					text-align: center;
+					background: #fff url(http://misc.360buyimg.com/lib/skin/e/i/loading-jd.gif) no-repeat 50% 50%;
+					a{	
+						height:100%;
+						text-decoration: none;
+						display: block;
+						position: relative;
+						overflow: hidden;
+						s{
+							@include inline-block;
+							height:100%;
+							vertical-align: middle;
+						}
+						img{
+							width:220px;
+							height:221px;
+							vertical-align: middle;
+						}
+						.txt{
+							position:absolute;
+							left:0;
+							bottom:0;
+							overflow:hidden;
+							width:100%;
+							height:27px;
+							background:rgba(247,243,253,0.3)!important;
+							background:transparent\9;
+							filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#04060000,endColorstr=#04060000);
+							text-align:center;transition:all .5s ease-in 0s;
+							font-size:14px;
+							line-height:27px;
+							text-overflow:ellipsis;
+							white-space:nowrap;
+							cursor:pointer;
+							color:#333;
+							z-index: 2;
+						}
+						.hover_bg{
+							position: absolute;
+							left:0px;
+							top:0px;
+							background:#000;
+							width:100%;
+							height:100%;
+							opacity: 0.1;
+							filter:alpha(opacity=10);
+							z-index: 1;
+							display: none;
+						}
+						&:hover{
+							.hover_bg{
+								display: block;
+							}
+						}
+					}
+				}
+				.fore01{
+					width:461px;
+					height:459px;
+					a{
+						img{
+							width:461px;
+							height:459px;
+						}
+						.txt{
+							background:rgba(198,186,216,0.8)!important;
+							filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#27190500,endColorstr=#27190500);
+							color:#fff;
+						}
+					}
+				}
+			}
+		}
+		.sort{
+			margin-bottom:10px;
+			width:102%;
+			.slist{
+				width:359px;
+				height:359px;
+				float:left;
+				padding:11px;
+				background:url("i/sort_list_bg.gif");
+				margin:15px 15px 0 0;
+				box-shadow: 1px 1px 7px #ddd;
+				border:1px solid #ddd;
+				.item{
+					float:left;
+					text-align: center;
+					background:#fff;
+					width:173px;
+					height:173px;
+					background: #fff url(http://misc.360buyimg.com/lib/skin/e/i/loading-jd.gif) no-repeat 50% 50%;
+					a{
+						display: block;
+						width:169px;
+						height:169px;
+						line-height:169px;
+						border:2px solid #ffc6c6;
+						text-decoration: none;
+						overflow: hidden;
+						s{
+							@include inline-block;
+							height:100%;
+							vertical-align: middle;
+						}
+						img{
+							vertical-align: middle;
+							transition:all 3s ease 0s;
+							transform:scale(1,1);
+						}
+						&:hover{
+							border:2px solid #ffcc00;
+							img{
+								transform:scale(1.1,1.1);
+							}
+						}
+					}
+				}
+				.mt{
+					background:url("i/slist_bg.png") center center no-repeat;
+					border:none;
+					font-size:25px;
+					color:#9e6161;
+					a{
+						border:none;
+						color:#9e6161;
+						font-family: "Microsoft yahei";
+						&:hover{
+							border:none;
+						}
+					}
+				}
+				.fore3,.fore4{
+					margin-top:11px;
+				}
+				.fore1,.fore3{
+					margin-right:11px;
+				}
+			}
+		}
+	}
+	.mb{
+		background:#eee;
+		overflow:inherit;
+		.crumbs{
+			background:#f7f7f7;
+			border:1px solid #d7d7d7;
+			padding:5px 15px;
+			color:#333;
+			line-height: 26px;
+			a{
+				color:#333;
+			}
+			a:hover{
+				color:#1665a7;
+				text-decoration: none;
+			}
+			em{
+				margin:0 5px;
+			}
+			.filter{
+				float:right;
+				.store{
+					float:left;
+					margin-right:50px;
+					dt,dd{
+						float: left;
+    					line-height: 26px;
+					}
+					#store-selector{
+						height: 26px;
+					    margin-right: 15px;
+					    position: relative;
+					    z-index: 5;
+						.text {
+						    background: none repeat scroll 0 0 #fff;
+						    border: 1px solid #ccc;
+						    float: left;
+						    height: 23px;
+						    line-height: 23px;
+						    overflow: hidden;
+						    padding: 0 20px 0 4px;
+						    position: relative;
+						    top: 0;
+						    width: 100px;
+						    b{
+						    	background: url("http://misc.360buyimg.com/201007/skin/df/i/20130606B.png") no-repeat scroll -36px -55px rgba(0, 0, 0, 0);
+							    display: block;
+							    height: 6px;
+							    overflow: hidden;
+							    position: absolute;
+							    right: 5px;
+							    top: 9px;
+							    width: 9px;
+						    }
+						}
+						.ui-area-text-wrap{
+							float:none !important;
+						}
+					}
+					.instock{
+						padding-left: 16px;
+    					position: relative;
+    					b{
+    						display: block;
+						    font-size: 0;
+						    height: 13px;
+						    left: 0;
+						    position: absolute;
+						    top: 7px;
+						    width: 13px;
+						    background: url("i/20130606B.png") no-repeat ;
+						    background-position: -56px 0;
+    					}
+    					a:hover{
+    						color:#e4393e;
+    						text-decoration: underline;
+    					}
+    					.selected{
+    						b{
+    							background:url("http://misc.360buyimg.com/201007/skin/df/i/20130415i.png") repeat scroll -287px -16px rgba(0, 0, 0, 0);
+    						}
+    					}
+					}
+				}
+				.order{
+					line-height: 26px;
+					float:left;
+					dt,dd{
+						float:left;
+					}
+					dd{
+						background: #fff;
+					    border: 1px solid #cecbce;
+					    height: 24px;
+					    line-height: 24px;
+					    margin-right: 5px;
+					    overflow: hidden;
+					    a{
+					    	display: block;
+  							padding: 0 10px;
+					    }
+					    a:hover{
+					    	color:#e4393c;
+					    }
+					    b{
+						 	background: url("i/20130606B.png") no-repeat;
+						    font-size: 0;
+						    height: 11px;
+						    overflow: hidden;
+						    position: absolute;
+						    right: 8px;
+						    top: 6px;
+						    width: 9px;
+						}
+					}
+					.down{
+						position: relative;
+						a{
+							padding-right:20px;
+						}
+						b{
+					    	background-position: -70px -102px;
+						}
+					}
+					.up{
+						position:relative;
+						a{
+							padding-right:20px;
+						}
+						b{
+							 background-position: -70px -114px
+						}
+					}
+					.curr{
+						background:#e4393c;
+						color:#fff;
+						a{
+							color:#fff;
+						}
+						a:hover{
+							color:#fff;
+						}
+					}
+				}
+				.pagin{
+					float:left;
+					.text{
+						i{
+							font-style: normal;
+							color:#e4393c;
+						}
+					}
+					.prev,.next{
+						background:#fff;
+						color:#005aa0;
+						font-weight:bold;
+						padding-right:10px;
+						font-size:12px;
+						font-weight: normal;
+						cursor: pointer;
+					}
+					.prev-disabled,.next-disabled{
+						background:#fff;
+						color:#999;
+						cursor: default;
+					}
+					a:hover{
+						background:#015a9e;
+						color:#fff;
+					}
+				}
+			}
+		}
+		.plist{
+			width:102%;
+			.item{
+				margin:15px 15px 0 0;
+				float:left;
+				position:relative;
+				width:230px;
+				height:340px;
+				background:#f9f9f9;
+				box-shadow:1px 1px 2px rgba(0,1,1,0.09);
+				z-index:1;
+				.p-img{
+					width:230px;
+					height:220px;
+					padding:0;
+					padding-top:5px;
+					background:#fff url(http://misc.360buyimg.com/lib/skin/e/i/loading-jd.gif) no-repeat 50% 50%;
+					text-align:center;
+					img{
+						width:220px;
+						height:220px;
+					}
+				}
+				.p-price{
+					float:right;
+					position:relative;
+					z-index:1;
+					height:18px;
+					padding:0 4px;
+					border:1px solid #e4393c;
+					margin-top:-20px;
+					line-height:20px;
+					background:#ef5151;
+					strong{line-height:18px;font-size:12px;color:#fff;}
+				}
+				.p-name{
+					overflow:hidden;
+					height:3em;
+					padding:0 10px;
+					margin:10px 0;
+					line-height:1.5em;
+					a{
+						text-decoration:none;
+						transition:all .5s ease-in 0s;
+						color:#666;
+						&:hover{
+							color:#e4393c;
+						}
+					}
+				}
+				.btns{
+					clear:both;
+					padding:0 10px;
+					text-align: center;
+					a{	
+						@include inline-block;
+						/*width:45px;
+						height:25px;*/
+						float:left;
+						padding:0 4px;
+						margin:0 1px;
+						line-height:25px;
+						background:#eee;
+						text-decoration:none;
+						color:#333;
+						text-overflow:ellipsis;
+						white-space:nowrap;
+						overflow:hidden;
+						cursor:pointer;
+						&:hover{
+							background:#ef5151;
+							color:#fff;
+						}
+					}
+					a:hover{
+						
+					}
+				}
+				.stockStatus{
+					clear: both;
+					padding: 10px 10px;
+					color: #333;
+				}
+			}
+			.item:hover{
+				background:#fff;
+				box-shadow:1px 1px 5px rgba(0,0,0,0.5);
+			}
+		}
+	}
+	.load{
+		height:60px;
+		background:#ddd;
+		line-height: 60px;
+		margin-top:15px;
+		font-family: "Microsoft yahei";
+		font-size:18px;
+		color:#666;
+		text-align: center;
+	}
+}
