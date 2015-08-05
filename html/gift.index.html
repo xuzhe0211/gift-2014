@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>礼品购</title>
+<link rel="stylesheet" type="text/css" href="http://misc.360buyimg.com/lib/skin/2013/base.css" media="all" />
+<script type="text/javascript">
+	window.pageConfig={
+		compatible:true
+	};
+</script>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+</head>
+<body>
+{%widget name="common" type="css"%}
+{%widget name="header" data='{"home":true}'%}
+<!-- main -->
+<div id="container">
+	<div class="w clearfix">
+		{%widget name="video"%}
+	</div>
+	<div class="w clearfix mb20">
+		{%widget name="slide"%}
+		{%widget name="warn"%}
+	</div>
+	<div class="w">
+		{%widget name="choice"%}
+		{%widget name="chooseGift"%}
+	</div>
+</div>
+<!-- /main -->
+<div class="footer">
+	{%widget name="footer"%}
+</div>
+<div class="goTop hide">返回顶部</div>
+<div class="backpanel-gift" style="display:block;">
+    <div class="backpanel-inner">
+        <div class="bp-item bp-item-survey">
+            <a href="http://surveys.jd.com/index.php?r=survey/index/sid/488883/lang/zh-Hans" class="survey" target="_blank">调查问卷</a>
+        </div>
+        <div class="bp-item bp-item-backtop">
+            <a href="#none" class="backtop" target="_self">返回顶部</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
+<script type="text/javascript" src="/js/gift.index.js"></script>
+</body>
+</html>

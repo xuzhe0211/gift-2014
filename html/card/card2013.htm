@@ -1,0 +1,212 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .newcard
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .newcard .letter
+        {
+            width: 514px;
+            height: 306px;
+			top: 50%;
+			position: absolute;
+			margin-top: -153px;
+			left: 50%;
+			margin-left: -257px;
+        }
+        .newcard .letter-fl
+        {
+            overflow: hidden;
+            float: left;
+        }
+        .newcard .letter-fl .letter-ifo
+        {
+            position: relative;
+            width: 473px;
+            padding: 18px 20px 22px;
+            overflow: hidden;
+            background: #fffdf0;
+            margin-right: 24px;
+            border-right: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .newcard .letter-ifo .joy
+        {
+            position: absolute;
+            right: 15px;
+            top: 4px;
+            background: url(i/joy.png) no-repeat;
+            width: 102px;
+            height: 58px;
+        }
+        .newcard .letter-ifo .botton-ico
+        {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            background: url(i/bottom-ico.png) no-repeat;
+            width: 34px;
+            height: 34px;
+        }
+        .newcard .letter-to
+        {
+            font-size: 14px;
+            color: #999;
+            border-bottom: 1px solid #eae4bb;
+            width: 202px;
+			height: 33px;
+            margin-bottom: 15px;
+            margin-left: 40px;
+        }
+        .newcard .letter-to b, .newcard .letter-from b
+        {
+            color: #333333;
+            font-size: 18px;
+            padding-left: 10px;
+            display: inline-block;
+        }
+        .newcard .letter-to input
+        {
+            border: 0;
+            background: #FFFDF0;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .newcard .letter-fl p
+        {
+            border-bottom: 1px solid #eae4bb;
+            padding: 10px 10px 6px;
+            overflow: hidden;
+            height: 14px;
+            line-height: 14px;
+        }
+        .newcard .letter-fl .extra
+        {
+            text-align: right;
+            color: #e4dba1;
+            margin-bottom: 20px;
+        }
+        .newcard .letter-fl .extra span
+        {
+            margin-right: 15px;
+        }
+        .newcard .letter-words
+        {
+            font-style: italic;
+            font-size: 14px;
+            color: #E4393C;
+            font-weight: bold;
+        }
+        .newcard .letter-words b
+        {
+            color: #ddd;
+        }
+        .newcard .letter-from
+        {
+            float: right;
+            width: 202px;
+            font-size: 14px;
+            color: #999;
+            border-bottom: 1px solid #eae4bb;
+            padding-bottom: 10px;
+            width: 202px;
+            margin-bottom: 5px;
+            margin-right: 40px;
+        }
+        .newcard .letter-from input
+        {
+            border: 0;
+            background: #FFFDF0;
+            font-weight: bold;
+            margin-left: 10px;
+            width: 140px;
+        }
+        .newcard .letter-fr
+        {
+            float: left;
+            width: 318px;
+        }
+        .newcard .letter-img
+        {
+            background: #fff;
+            padding: 18px 0 20px;
+            text-align: center;
+            border-right: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .newcard .letter-content
+        {
+            background-color: rgb(255,
+            253, 240);
+            text-indent: 2em;
+            height: 160px;
+            line-height: 32px;
+            margin-left: 60px;
+            font-size: 14px;
+            width: 352px;
+            border-width: 0;
+            overflow: hidden;
+        }
+        .newcard .letter-underline
+        {
+            border-bottom: 1px solid rgb(234, 228,
+            187);
+            height: 1px;
+            display: inline-block;
+            width: 390px;
+            position: relative;
+            margin-left: 40px;
+            visibility: hidden;
+        }
+        .newcard .letter-underline-lv1
+        {
+            top: 30px;
+        }
+        .newcard .letter-underline-lv2
+        {
+            top: 43px;
+        }
+        .newcard .letter-underline-lv3
+        {
+            top: 56px;
+        }
+        .newcard .letter-underline-lv4
+        {
+            top: 69px;
+        }
+        .newcard .letter-underline-lv5
+        {
+            top: 82px;
+        }
+        .newcard .hide
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body class="newcard">
+    <div class="letter">
+        <div class="letter-fl">
+            <div class="letter-ifo">
+                <div class="letter-to">
+                    To
+                    <input type="text" id="letter-to-content" maxlength="10" value="{to}">
+                </div>
+                <textarea cols="20" rows="4" id="letter-content" class="letter-content" readonly>{Message}</textarea>
+                <div class="letter-from">
+                    From
+                    <input type="text" id="letter-from-content" maxlength="10" value="{from}">
+                </div>
+                <div class="joy">
+                </div>
+                <div class="botton-ico">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>礼品购</title>
+<link rel="stylesheet" type="text/css" href="http://misc.360buyimg.com/lib/skin/2013/base.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://cart.gift.jd.com/cart/skin/purchase.2012.css" media="all" />
+<script type="text/javascript">
+	window.pageConfig={
+		compatible:false
+	};
+</script>
+</head>
+<body>
+<!-- <input type="hidden" value="2" name="videoUrl" id="videoUrl"/>
+<input type="hidden" value="3" name="imageUrl" id="imageUrl"/> -->
+{%widget name="common" type="css"%}
+{%widget name="header" data='{"home":false}'%}
+<!-- main -->
+{%widget name="cart"%}
+<!-- /main -->
+{%widget name="footer"%}
+<script type="text/javascript" src="http://misc.360buyimg.com/lib/js/e/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="http://cart.gift.jd.com/cart/js/config.js?v=201306081707"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/lib/js/2012/base-2011.js?v=201210302125" charset="gb2312"></script>
+<script type="text/javascript" src="http://misc.360buyimg.com/lib/js/2012/lib-v1.js?v=201210302125" charset="gb2312"></script>
+<script type="text/javascript" src="http://cart.gift.jd.com/cart/js/cart.extra.js?v=201306081707"></script>
+<script type="text/javascript" src="http://cart.gift.jd.com/cart/js/cart.js"></script>
+<script type="text/javascript" src="/js/raphael.min.js"></script>
+<script type="text/javascript">
+String.prototype.getBytes = function() {     
+    // var cArr = this.match(/[^\x00-\xff]/ig);     
+    // return this.length + (cArr == null ? 0 : cArr.length/2);    
+    return this.length;
+}  
+function textLimitCheck(thisArea, maxLength){  
+    var len = thisArea.value.getBytes();  
+    if (len > maxLength){  
+        // alert(maxLength + ' 个字限制. \r超出的将自动去除.');  
+        var tempStr = "";  
+        var areaStr = thisArea.value.split("");  
+        var tempLen = 0;  
+        for(var i=0,j=areaStr.length;i<j;i++){  
+            tempLen += areaStr[i].getBytes();  
+            if(tempLen<=maxLength){  
+                tempStr += areaStr[i];  
+            }                 
+        }             
+        thisArea.value = tempStr  
+        thisArea.focus();  
+    }  
+    /*回写span的值，当前填写文字的数量*/  
+    $('div.letter-ifo div.extra b').text(thisArea.value.length);
+    // messageCount.innerText = thisArea.value.length;  
+}  
+    //计算textarea的行数
+    function countLines(str, fc, cc) {
+        var i = 0, arr = str.split('\n'), l = arr.length, count = arr.length;
+        for(; i < l; i++) {
+            var size = stats(arr[i]);
+            if(i == 0) {
+                count += Math.floor(size / fc) >= 1 ? 1 : 0;
+                count += Math.floor((size - fc) / cc) < 0 ? 0 : Math.floor((size - fc) / cc);
+            } else {
+                count += Math.floor(size / cc);
+            }
+        }
+        return count;
+    }
+    //计算字符数
+    function stats(str) {
+        var reg = /[\u4E00-\u9FA5]/, count = 0, lv = ($.browser.msie ? ($.browser.version < 8 ? 44/25 : 40/24) : 2),
+                str = str.split('');
+        for(var i = 0, l = str.length; i < l; i++) {
+            reg.test(str[i]) ? (count = count + lv) : count++;
+        }
+        return count;
+    }
+
+    var tpl = '<textarea wrap="on" id="letter-content" class="letter-content" style="word-wrap:break-word;word-break: break-all;"></textarea>',
+            stHtml;
+    var timer = setInterval(function() {
+        $('div.letter textarea').size() < 1 ? (function() {
+            $('div.letter-ifo>div:eq(1)').before($(tpl));
+            $('div.extra, div.letter-from').fadeIn();
+            $('#letter-content').val($.trim($('#letter-tpl').text()));
+        })() : (function() {
+            var fc = 46, cc = 50;
+            $.browser.msie && ($.browser.version < 8 ? (fc = 40, cc = 44) : (fc = 39, cc = 41));
+            $('div.letter-ifo>textarea').bind('keyup keydown mouseover paste', function() {
+                // var l = $(this).val().length, str = $(this).val(),
+                //         rows = countLines(str, fc, cc);
+                // rows <= 5 && (stHtml = str);
+                // if(rows >= 5 || l > 60) { $(this).val(stHtml.substr(0, 60));}
+                // $('div.letter-ifo div.extra b').text(l);
+                textLimitCheck(this, 60);
+            });
+            clearInterval(timer);
+        })();
+    }, 500);
+</script>
+<script type="text/javascript" src="http://wl.jd.com/wl.js"></script>
+
+</body>
+</html>
